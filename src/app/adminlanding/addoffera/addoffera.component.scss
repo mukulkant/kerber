@@ -1,0 +1,116 @@
+.tableCover{
+    background:#fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    table{
+        tr td{
+            font-size: 15px;
+            padding:8px;
+            select, input[type="text"]{
+                height: 40px;
+                width: 300px;
+                border:1px solid #dfdfdf;
+                padding: 0 10px;
+                font-size: 15px;
+                &.w130{
+                    width: 130px;
+                }
+            }
+            input.usd{background:url(../../../assets/img/usd.png) no-repeat 90% center;padding-right: 35px;}
+            input.clock{background:url(../../../assets/img/clock.png) no-repeat 90% center;padding-right: 35px;}
+            input.clndr{background:url(../../../assets/img/calendar.png) no-repeat 90% center;padding-right: 35px;}
+            input.percent{background:url(../../../assets/img/per.png) no-repeat 90% center;padding-right: 35px;}
+            
+        }
+    }
+    .catSelect{
+        display: flex;
+        margin: 15px 0 20px;
+        .catCol{
+            min-width: 300px;
+            h3{
+                color: #4b4b4b;
+                margin:0 0 10px;
+            }
+            .selectArea{
+                border:1px solid #dfdfdf;
+                select{
+                    height: 40px;
+                    width: 300px;
+                    border:none;
+                    border-bottom:1px solid #dfdfdf;
+                    padding: 0 10px;
+                    font-size: 15px;
+                }
+                ul{
+                    list-style: none;
+                    height: 200px;
+                    overflow: auto;
+                    li{
+                        padding:5px 12px;
+                        label{
+                            cursor: pointer;
+                            position: relative;
+                            padding-left: 5px;
+                            &:after{
+                                content: '';
+                                position: absolute;
+                                height: 16px;
+                                width: 16px;
+                                border: 1px solid #ccc;
+                                left: -18px;
+                                top: 2px;
+                                background: #fff;
+                                border-radius: 1px;
+                               
+                            }
+                            i{
+                                color: #edb636;
+                                margin-right: 2px;
+                            }
+                        }
+                        input[type="checkbox"]{
+                            opacity: 0;
+                            width: 1px;
+                        }
+                        input[type="checkbox"]:checked ~ label:after{
+                            background: url(../../../assets/img/checkTick.png) no-repeat center center;
+                            background-size: 12px;
+                            content: ' ';
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and  (max-width:1600px){
+    .tableCover .catSelect{
+        flex-wrap: wrap;
+    }
+}
+@media only screen and  (max-width:1270px){
+    .tableCover table tr td{
+        display: inline-block;
+        &:first-child{
+            width: 100%;
+        }
+    }
+}
+@media only screen and  (max-width:360px){
+    .tableCover{
+        padding: 5px;
+        .catSelect .catCol ,
+        .catSelect .catCol .selectArea select{width: 100%;} 
+    }
+    .tableCover .catSelect .catCol,
+    .tableCover table tr td select, .tableCover table tr td input[type="text"]{
+        width: 280px;
+    }
+    .tableCover .catSelect .catCol .selectArea{
+        width: 280px;
+        margin: 0 auto;
+    }
+}

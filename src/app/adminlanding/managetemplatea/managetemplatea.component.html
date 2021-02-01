@@ -1,0 +1,128 @@
+<app-headeradmin></app-headeradmin>
+
+<div class="wrapper-col">
+  <app-leftnava></app-leftnava>
+  <div class="rightDataCol">
+    <button class="menuIco">
+      <i class="fa fa-bars"></i>
+    </button>
+    <h5>Manage Template</h5>
+    <div class="tableCover">     
+      <div class="tableWrap">
+        <table>
+          <tr>
+            <th width="5%">S.No.</th>
+            <th width="30%">Template Name  </th>
+            <th width="17%">Category  </th>
+            <th width="17%">Sub Category </th>
+            <th width="17%">Sub Category </th>
+            <th width="14%">Actions</th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td>Fasion</td>
+            <td>Appareal</td>
+            <td>Girls</td>
+            <td>Coat</td>
+            <td>
+              <button>
+                <i class="fa fa-edit"></i>
+              </button>
+              <button>
+                <i class="fa fa-trash"></i>
+              </button>
+            </td>
+          </tr>         
+          <tr>
+            <td>2.</td>
+            <td>Fasion</td>
+            <td>Appareal</td>
+            <td>Girls</td>
+            <td>Coat</td>
+            <td>
+              <button>
+                <i class="fa fa-edit"></i>
+              </button>
+              <button>
+                <i class="fa fa-trash"></i>
+              </button>
+            </td>
+          </tr>
+         
+        </table>
+      </div>    
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- modal start -->
+<div class="modalWrap cateTableWrp" style="display: none;">
+  <div class="modalBox">
+    <h2>Add Category Template</h2>
+    <span class="closebtn"></span>
+   
+    <div class="frmCol ">
+      <table>
+        <tr>
+          <td width="30%">Main Category</td>
+          <td width="70%">
+            <div class="selectBox">
+              <select name="" id="">
+                <option value="">Fasion</option>
+              </select>
+            </div>    
+          </td>
+        </tr>
+        <tr>
+          <td>Level 2 Category</td>
+          <td>
+            <div class="selectBox">
+              <select name="" id="">
+                <option value="">Girls</option>
+              </select>
+            </div>    
+          </td>
+        </tr>
+        <tr>
+          <td>Level 3 Category</td>
+          <td>
+            <div class="selectBox">
+              <select name="" id="" >
+                <option value="">Gloves</option>
+              </select>
+            </div>    
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"><h4>Template Fields</h4></td>
+        </tr>
+        <tr>
+          <td>Template Name</td>
+          <td><input type="text" class="select" placeholder="Fasion"></td>
+        </tr>
+        <tr>
+          <td>Brand</td>
+          <td>
+            <input type="text" class="select" placeholder="tshirt">
+            <button class="tranBtn" ><i class="fa fa-trash"></i></button>
+          </td>
+        </tr>
+        <tr>
+          <td>Manufacturer</td>
+          <td>
+            <input type="text" class="select" placeholder="Manufacturer Name">
+            <button class="tranBtn" ><i class="fa fa-plus-circle"></i></button>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><button class="orng-btn">Update</button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<!-- modal end -->

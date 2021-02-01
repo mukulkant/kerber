@@ -1,0 +1,181 @@
+.tableCover{
+    background:#fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex; 
+    .chatList{
+        min-width: 320px;
+        max-width: 320px;
+        background-color: #f0f0f0;
+        border:1px solid #ccc;
+        margin-right: 20px;
+        ul{
+            list-style: none;
+            li{
+                position: relative;
+                padding: 15px 60px 15px 15px;
+                border-bottom: 1px solid #ccc;
+                cursor: pointer;
+                span{
+                    position:absolute;
+                    top:15px;
+                    right: 10px;
+                    font-size: 11px;
+                    color: #444;
+                }
+                h3{
+                    font-size: 16px;
+                    margin: 0 0 4px;
+                    color: #595959;
+                }
+                p{
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    color: #595959;
+                }
+                &:hover,
+                &.active{
+                    background: #d1e9d9;
+                }
+                &:last-child{
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+    .chatBox{
+        flex:1;
+        h2{
+            background: #61cf88;
+            padding: 15px;
+            color: #363636;
+            font-size: 16px;
+        }
+        ul{
+            list-style: none;
+            padding: 20px 0 20px 5px;
+            height: 510px;
+            overflow: auto;
+            li{
+                display: flex;
+                align-items: baseline;
+                h4{
+                    width: 150px;
+                    min-width: 150px;
+                }
+                .bubble {
+                    margin-bottom: 15px;
+                    p{
+                        background-color: #e1e6e0;
+                        padding: 15px 18px;
+                        border-radius: 4px;
+                        font-size: 15px;
+                        color: #303433;
+                    }
+                    &.bblGrn p{
+                        background-color: #61cf88;
+                    }
+                }
+                span{
+                    font-size: 11px;
+                    color: #666;
+                }
+            }
+        }
+        .produtBar{
+            align-items: flex-start;
+            padding: 10px 10px 10px 0;
+            
+            .productDatatext{
+                display: flex;
+                flex-direction: column;
+                padding: 0px;
+                width: 80%;
+                h2{
+                    width: 100%;
+                    font-size: 20px;
+                    background-color: transparent;
+                    padding: 0;
+                }
+                h3{
+                    color: #363636;;
+                    padding: 5px 0;
+                }
+                table{
+                    width: 100%;
+                    td{
+                        width: 25%;
+                        font-size: 15px;
+                        color: #363636;
+                        padding: 5px 20px 5px 0px;
+                        strong{
+                            float: right;;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .chatArea{
+        display: flex;
+        border:1px solid #ccc;
+        padding: 10px;
+        align-items: center;
+        input{
+            flex:1;
+            border:none;
+            padding: 8px 0;
+            font-size: 15px;
+            margin-right: 10px;
+        }
+        button{
+            height: 36px;
+            width: 36px;
+            border-radius: 100%;
+            background-color: #646e77;
+            color: #fff;
+            border:none;
+            font-size: 16px;
+            line-height: 0;
+        }
+    }
+}
+
+@media only screen and  (max-width:1200px){
+    .tableCover{
+        flex-direction: column;
+        .chatList{
+            min-width: 10px;
+            max-width: 100%;
+            margin: 0 0 10px;
+            max-height: 200px;
+            overflow-x: auto;
+            ul li{
+                padding: 5px 60px 7px 8px;
+            }
+        }
+    }
+}
+@media only screen and  (max-width:800px){
+    .tableCover {
+        padding: 10px;
+        .chatBox {
+            .produtBar{
+                flex-direction: column;
+                .productDatatext{
+                    width: 100%;
+                    table td{
+                        display: block;
+                        width: 100%;
+                    }
+                }
+            }
+            ul li h4{
+                min-width: 100px;
+                width: 100px;
+            }
+        }
+    }
+    
+}

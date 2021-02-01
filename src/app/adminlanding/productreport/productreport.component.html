@@ -1,0 +1,129 @@
+<app-headeradmin></app-headeradmin>
+
+<div class="wrapper-col">
+  <app-leftnava></app-leftnava>
+  <div class="rightDataCol">
+    <button class="menuIco">
+      <i class="fa fa-bars"></i>
+    </button>
+    <h5>Product Report</h5>
+    <div class="tableCover">
+      <div class="upperHead">
+        <div class="detls">
+          <p>Total Review:  <strong>101</strong> </p>
+          <p>Current Month :  <strong>101</strong> </p>
+        </div>
+      </div>
+      <div class="tableHead">
+        <div>
+          <label for="search">Search User</label>
+          <input type="text" id="search">
+          <button class="orgn-btn">Search</button>
+        </div>
+        <div>
+          <label for="Filter">Show</label>
+          <select id="Filter">
+            <option value="">option1</option>
+            <option value="">option1</option>
+            <option value="">option1</option>
+          </select>
+
+          <label for="Filter">Filter</label>
+          <select id="Filter">
+            <option value="">option1</option>
+            <option value="">option1</option>
+            <option value="">option1</option>
+          </select>
+        </div>
+      </div>
+      <div class="tableWrap">
+        <table>
+          <tr>
+            <th width="5%"><div> S.No.</div></th>
+            <th width="10%"><div> Report id <span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></div></th>
+            <th width="10%"><div> Reporter id <span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></div></th>
+            <th width="10%"><div> Reviewer id <span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></div></th>
+            <th width="10%"><div> Assign To<span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></div></th>
+            <th width="10%"><div> Reported On <span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></div></th>
+            <th width="10%"><div> Updated On <span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></div></th>
+            <th width="10%"><div> Status <span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></div></th>
+            <th width="5%"><div> Actions</div></th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td><span>dainel8765</span></td>
+            <td><span>dainel@hotmail.com</span></td>
+            <td><span>dainel@hotmail.com</span></td>
+            <td><span>Name of the supervisor</span></td>
+            <td>31-12-2020</td>
+            <td>31-12-2020</td>
+            <td><span>New</span></td>
+            <td>
+              <button>
+                <i class="fa fa-trash"></i>
+              </button>
+            </td>
+          </tr>
+
+          
+         
+        </table>
+      </div>
+      <div class="pagiCover">
+        <app-pagination></app-pagination>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- modal start -->
+<div class="modalWrap" style="display: none;">
+  <div class="modalBox returtBox w600">
+    <span class="closebtn"></span>
+    <h2>Product Reviews Deatils</h2>
+    <table  class="orderDetail">
+      <tr>
+        <td>
+          <strong>Reporter ID</strong>
+          <p>Name</p>
+        </td>
+        <td>
+          <strong>Reported On</strong>
+          <p>1-10-2021</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <strong>Reviewer ID</strong>
+          <p>Name@gmail.com</p>
+        </td>
+        <td>
+          <strong>Updated On</strong>
+          <p>1-10-2021</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+          <strong>Report Reason</strong>
+          <p class="red">Incomplete</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+          <strong>Message</strong>
+          <p>The Product deatils you have mentioned that is incomplete</p>
+        </td>
+      </tr>
+
+
+    </table>
+    <button class="orng-btn red-btn">Delate</button>
+    <button class="orng-btn ">Review</button>
+  </div>
+</div>
+<!-- modal end -->

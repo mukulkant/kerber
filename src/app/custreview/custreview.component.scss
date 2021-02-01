@@ -1,0 +1,179 @@
+.productCol{
+    img{
+        min-width: 120px;
+    }
+    div{
+        max-width: 500px;
+        h2{
+            color: #434343;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 5px;
+        }
+    }
+    p{
+        margin: 5px 0 0;
+        color: #404040;
+        font-size: 15px;
+        font-weight: 600;
+        i{
+            color:#eebb36;
+            font-size: 17px;
+        }
+        a{
+            color: #83bf8c;
+        }
+    }
+}
+.ratingStatus{
+    display: flex;
+    align-items: center;
+    margin:10px 0;
+    .reviwBar ul{
+        list-style: none;
+        margin-left: 15px;
+        li{
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+            font-size: 13px;
+            .prgesss{
+                display: inline-block;
+                margin: 0 5px;
+                width: 215px;
+                background-color: #e4e4e4;
+                height: 20px;
+                border-radius: 3px;
+                overflow: hidden;
+                span{
+                    width: 50%;
+                    background-color: #eebb35;
+                    display: block;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
+h3{
+    font-size: 16px;
+    color: #252839;
+    font-weight: 700;
+    padding-bottom: 16px;
+}
+.reviewTable{
+    background: #f4f4f4;
+    padding: 15px 25px;
+    margin: 60px 0;
+    border:1px solid #a8a8a8;
+    .headerRev{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+        h2{
+            display: flex;
+            align-items: center;
+            color: #404040;
+            font-weight: 600;
+            
+        }
+        button{
+            background: #8bce8b;
+            padding: 12px 18px;
+            font-size: 16px;
+            border:none;
+            color: #fff;
+            border-radius: 4px;
+        }
+    }
+}
+.reviewCol{   
+    max-width: 790px;
+    .rate{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #ccc;
+        padding: 20px 0;
+        flex-wrap: wrap;
+        h4{
+            margin-bottom: 5px;
+            font-size: 15px;
+            color: #555;
+        }
+        p{
+            font-size: 14px;
+            i{
+                font-size: 20px;
+                color: #ffbd1e;
+                margin-left: 4px;
+            }
+            &.redTxt{
+                padding: 5px 0 0;
+                text-align: center;
+
+            }
+            &.fedback{
+                width: 100%;
+                margin: 15px 0 0;
+                line-height: 24px;
+            }
+        }
+    }
+}
+@media all and (max-width:850px){
+    .productCol{
+        display: block;
+        margin-bottom: 15px;
+        div{
+            max-width: 100%;
+            h2{
+                font-size: 18px;
+                white-space: normal;
+            }
+        }
+    }
+}
+@media all and (max-width:680px){    
+    .reviewTable{
+        padding: 15px;
+        .headerRev{
+            h2{
+                font-size: 20px;
+            }
+            button{
+                font-size: 14px;
+                padding: 8px;
+            }
+        }
+    }
+}
+@media all and (max-width:550px){
+    .productCol div h2{
+        font-size: 17px;
+    }
+    .ratingStatus .reviwBar ul li .prgesss{
+        width: 150px;
+    }
+    .reviewTable .headerRev{
+        display: block;
+        h2{
+            display: block;
+            p{
+                margin: 6px 0 0;
+            }
+        }
+        button{
+            width: 180px;
+            margin: 10px 0 0;
+        }
+    }
+}
+@media all and (max-width:470px){
+    .ratingStatus{
+        flex-direction: column;
+    }
+}

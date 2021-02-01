@@ -1,0 +1,122 @@
+.topHead{
+    background: #60d084;
+    .fa-bell{
+        color: #fff;
+    }
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 1px;
+        margin-right: 1px;
+        .ct-select-group {
+            height: 30px;
+            position: relative;
+            width: 130px;
+        }
+        .ct-select {
+            height: 30px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            font-size: 14px;
+            border: none;
+            background: transparent;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            cursor: pointer;
+            padding:5px 15px 5px 30px;
+            background: url(../../../assets/img/globe.png) no-repeat 10px center #fff;
+        }
+
+        .ct-select-group:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            background-image:  url(../../../assets/img/dropdown.png) ;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+        ul > {
+            display: flex;
+            align-items: center;
+            margin: 30px;
+            li{
+                list-style: none;
+                padding: 0 5px ;
+                font-size: 12px;
+                a{
+                    height: 17px;
+                    display: block;
+                    color: #000;
+                    font-size: 12px;
+                    font-weight: 400;
+                    text-decoration: none;
+                }
+            }
+            &.userLogin li{
+                position: relative;
+                margin:0 10px;
+                padding-right: 20px;
+                cursor: pointer;
+                background: url(../../../assets/img/dropdown.png) no-repeat right center;
+                ul{
+                    position: absolute;
+                    background: #fff;
+                    top:23px;
+                    width: 250px;
+                    padding:5px 10px;
+                    right: 0;
+                    border-radius: 0 0 5px 5px;
+                    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+                    z-index: 1;
+                    li{
+                        padding:10px 5px;
+                        color: #333;
+                        font-size: 15px;
+                        border-bottom: 1px solid #ccc;
+                        &:last-child{
+                            border:none;
+                        }
+                        span{
+                            background-color: red;
+                            border-radius: 50px;
+                            padding: 3px;
+                            font-size: 12px;
+                            color: #fff;
+                            text-align: center;
+                        }
+                        &:hover{
+                            background-color: #e5e5e5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media all and (max-width:480px){
+    
+    .topHead .wrapper .ct-select-group{
+        width: 80px;
+        &:after{
+            display: none !important;
+        }
+    }
+    .topHead .wrapper .ct-select{
+        background:#fff !important;
+        padding: 5px 15px 5px 5px;
+    }
+    .topHead .wrapper ul.userLogin > li{
+        margin-left: 5px;
+    }
+}

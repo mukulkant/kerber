@@ -1,0 +1,74 @@
+.tableCover{
+    background:#fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    padding: 0 20px 20px;
+    table{
+        width: 100%;
+        tr td{
+            font-size: 15px;
+            select, input[type="text"]{
+                height: 40px;
+                width: 300px;
+                border:1px solid #dfdfdf;
+                padding: 0 10px;
+                font-size: 15px;               
+            }
+            label{
+                display: block;
+                padding: 15px 0 10px;
+            }
+            .selectBox{
+                height: 40px;
+                position: relative;
+                margin:  0;
+                select{
+                    width: 300px;
+                    font-size: 14px;
+                    margin: 0;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    cursor: pointer;
+                    background: url('../../../assets/img/dropdown.png') no-repeat 95% center #fff;
+                }
+            }
+            textarea{
+                border:1px solid #dfdfdf;
+                padding: 0 10px;
+                font-size: 15px;
+                width: 100%;
+            }
+        }  
+    }
+    h4{
+        font-size: 16px;
+        border-bottom: 1px solid #dfdfdf;
+        padding: 12px 0 8px;
+        margin-bottom: -2px;
+        font-weight: 400;
+    }
+    .orng-btn{
+        margin-top: 30px;
+    }
+}
+
+@media only screen and  (max-width:930px){
+    .tableCover {
+        padding: 5px;
+        table {
+            tr td{
+                .selectBox,
+                input[type="text"]{
+                    margin: 0;
+                    width: 100%;
+                }
+                .selectBox select{
+                    width: 100%;
+                }
+            }
+        }
+        .orng-btn{
+            margin: 10px;
+        }
+    }
+}

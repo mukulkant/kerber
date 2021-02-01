@@ -1,0 +1,90 @@
+<div class="leftNav">
+  <h1>
+    <img src="assets/img/logo.png">
+    <i class="fa fa-close"></i>
+  </h1>
+  <ul>
+    <li [routerLink] = "['/adminlanding']" routerLinkActive="active"><span class="fa  fa-home"></span>  Dashboard</li>
+    <li routerLinkActive="active">User  <i class="fa fa-angle-down"></i>
+      <ul>
+        <li [routerLink] = "['/adminlanding/allusers']"  routerLinkActive="active">All Users</li>
+        <li [routerLink] = "['/adminlanding/allbuyers']"  routerLinkActive="active">Buyer</li>
+        <li [routerLink] = "['/adminlanding/allsellers']"  routerLinkActive="active">Seller</li>
+      </ul>
+    </li>
+    <li routerLinkActive="active">Order  <i class="fa fa-angle-down"></i>
+      <ul>
+        <li [routerLink] = "['/adminlanding/order']"    routerLinkActive="active">Manage Orders</li>
+      </ul>
+    </li>
+    <li routerLinkActive="active">Returns  <i class="fa fa-angle-down"></i>
+      <ul>
+        <li [routerLink] = "['/adminlanding/returns']"  routerLinkActive="active">Returns</li>
+      </ul>
+    </li>
+    <li routerLinkActive="active">Product Reviews <i class="fa fa-angle-down"></i>
+      <ul>
+        <li [routerLink] = "['/adminlanding/productreview']"  routerLinkActive="active">Reviews</li>
+      </ul>
+    </li>
+    <li routerLinkActive="active">Seller Reviews  <i class="fa fa-angle-down"></i>
+      <ul>
+        <li [routerLink] = "['/adminlanding/sellerreviewadmin']"  routerLinkActive="active">Seller Reviews</li>
+      </ul>
+    </li>
+    <li routerLinkActive="active">Reviews Reports <i class="fa fa-angle-down"></i>
+      <ul>
+        <li [routerLink] =  "['/adminlanding/reportreview']"  routerLinkActive="active">Reviews Reported</li>
+      </ul>
+    </li>
+    <li routerLinkActive="active">Product Reports  <i class="fa fa-angle-down"></i>
+      <ul>
+        <li [routerLink] = "['/adminlanding/productreport']"  routerLinkActive="active">Product Reported</li>
+      </ul>
+    </li>
+    <li routerLinkActive="active">Category  <i class="fa fa-angle-down"></i>
+      <ul>
+        <li [routerLink] = "['/adminlanding/managecategory']"  routerLinkActive="active">Manage Category</li>
+        <li [routerLink] = "['/adminlanding/managetemplate']"  routerLinkActive="active">Manage Template</li>
+      </ul>
+    </li>
+    <li routerLinkActive="active">Couriers  <i class="fa fa-angle-down"></i>
+      <ul>
+        <li [routerLink] = "['/adminlanding/addcourier']"  routerLinkActive="active">Add Couriers</li>
+        <li [routerLink] = "['/adminlanding/managecourier']"  routerLinkActive="active">Manage Couriers</li>
+      </ul>
+    </li>
+    <li routerLinkActive="active" [routerLink] = "['/adminlanding/paymentmethod']">Payment Methods</li>
+    <li routerLinkActive="active">Offers & Permotions  <i class="fa fa-angle-down"></i>
+      <ul>
+        <li [routerLink] = "['/adminlanding/manageoffer']"  routerLinkActive="active">Manage Offers</li>
+        <li [routerLink] = "['/adminlanding/addoffer']"  routerLinkActive="active">Add New Offers</li>
+      </ul>
+    </li>
+    <li routerLinkActive="active">Static Contents  <i class="fa fa-angle-down"></i>
+      <ul>
+        <li [routerLink] = "['/adminlanding/managepage']"  routerLinkActive="active">Manage Page</li>
+        <li [routerLink] = "['/adminlanding/addpage']"  routerLinkActive="active">Add Page</li>
+        <li [routerLink] = "['/adminlanding/aboutus']"  routerLinkActive="active">About Us</li>
+        <li [routerLink] = "['/adminlanding/termnmcondations']"  routerLinkActive="active">Terms & Conditions</li>
+        <li [routerLink] = "['/adminlanding/policy']"  routerLinkActive="active">Privacy Policy</li>
+      </ul>
+    </li>
+    <li routerLinkActive="active">Subscriptions  <i class="fa fa-angle-down"></i>
+      <ul>
+        <li [routerLink] = "['/adminlanding/managesubs']"  routerLinkActive="active">Manage Subscriptions</li>
+      </ul>
+    </li>
+    <li routerLinkActive="active"  [routerLink] = "['/adminlanding/reports']" >Reports </li>
+    <li routerLinkActive="active">Settings  <i class="fa fa-angle-down"></i>
+      <ul>
+        <li [routerLink] = "['/adminlanding/setsubsrate']"  routerLinkActive="active">Set Subscriptions Rates</li>
+        <li [routerLink] = "['/adminlanding/langsetting']"  routerLinkActive="active">Language Setting</li>
+        <li [routerLink] = "['/adminlanding/country']"  routerLinkActive="active">Country</li>
+        <li [routerLink] = "['/adminlanding/currency']"  routerLinkActive="active">Currency</li>
+        <li [routerLink] = "['/adminlanding/email']"  routerLinkActive="active">Email</li>
+        <li [routerLink] = "['/adminlanding/setting']"  routerLinkActive="active">General Settings</li>
+      </ul>
+    </li>
+  </ul>
+</div>

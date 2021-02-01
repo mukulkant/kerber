@@ -1,0 +1,78 @@
+.tableCover{
+    background:#fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    h4{
+        color: #2f2f2f;
+        border-bottom: 1px solid #dfdfdf;
+        padding-bottom: 6px;
+    }
+    .uploadArea{
+        margin: 10px 0 20px;
+        display: flex;
+        align-items: center;
+        .drag{
+            background-color: #eaeaea;border:1px dashed #a0a0a0;padding:12px;margin:0 10px;
+            strong{
+                text-decoration: underline;
+            }
+        }
+        p{
+            margin: 0 15px;
+        }
+        .orng-btn.relbtn{
+            margin: 0;
+            position: relative;
+            text-align: center;
+            padding: 12px 0px;
+            input{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                left: 0;
+                opacity: 0;
+                top:0;
+                cursor: pointer;
+            }
+        }
+    }
+    table{
+        width: 100%;
+        tr td{
+            font-size: 15px;
+            padding:8px 0;
+                input[type="text"]{
+                height: 40px;
+                max-width: 800px;
+                border:1px solid #dfdfdf;
+                padding: 0 10px;
+                font-size: 15px;
+                width: 100%;
+            }
+            button{
+                padding: 0px 10px 8px;
+                text-align: center;
+                color: #4a4a4a;
+                font-size: 28px;
+                border: none;
+                background: transparent;             
+            }
+        }
+    }
+}
+
+@media only screen and  (max-width:645px){
+    table tr td span{
+        display: block;
+        padding: 8px 0 0;
+    }
+}
+
+@media only screen and  (max-width:360px){
+    .tableCover{
+        padding: 10px;
+        table tr td input[type="text"]{
+            width: 100%;
+        }
+    }
+}

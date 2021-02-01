@@ -1,0 +1,323 @@
+.ordrStatus{
+    margin: 40px 0;
+    background-color: #f4f4f4;
+    border:1px solid #a5a5a5;
+    padding: 20px 25px;
+    h2{
+        color: #3d3d3d;
+        font-size: 23px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 15px;
+        margin-bottom: 10px;
+        span{
+            font-size: 14px;
+            font-weight: normal;
+        }
+    }
+    .addressBar {
+        padding:10px 15px 0;
+        h2{
+            border-bottom: none;
+        }
+        p{
+            font-size: 15px;
+            color: #424242;
+        }
+    }
+}
+hr{
+    border:none;
+    border-bottom: 1px solid #ccc;
+    margin: 25px 0 -5px;
+}
+
+.myBagWrap{
+    width: 100%;
+    tr td{
+        padding: 20px 0;
+        border-bottom: 1px solid #dcdcdc;
+        &:first-child{
+            width: 200px;
+            min-width: 200px;
+        }
+        .flex-wrap{
+            align-items: flex-start;
+            h2{
+                color: #3d3d3d;
+                font-size: 24px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                max-width: 520px;
+                margin-bottom: 0;
+                border: none;
+                padding-bottom: 0;
+                p{
+                    font-size: 15px;
+                    margin-top: 7px;
+                    a{
+                        color: #60cf86;
+                        font-weight:700;
+                        font-size: 14px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .priceTab{
+            p{
+                margin: 4px 0;
+                font-size: 15px;
+                color: #424242;
+                &.p{
+                    font-weight: bold;
+                    color: #333;
+                    span{
+                        color: #2f4851;
+                        font-weight: 800;
+                        font-size: 1.4rem;
+                        margin-right: 10px;
+                        background: transparent;
+                    }
+                    em{
+                        color: #909090;
+                        text-decoration: line-through;
+                        font-style: normal;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .delvyTab{
+            margin: 0 15px;
+            min-width: 130px;
+            p{
+                font-size: 15px;color: #424242;
+                &.t10{
+                    margin-top: 10px;
+                }
+            }
+            .idNo{
+                background-color: #61cf88;
+                padding: 8px 15px;
+                min-width: 180px;
+                text-align: center;
+                color: #fff;
+                margin: 20px 0 0;
+                border-radius: 3px;
+            }
+        }
+    }
+    tr:last-child td {
+        border: none;
+        padding-bottom: 0;
+    }
+
+ 
+}
+.rightAction{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-height: 200px;
+    min-width: 130px;
+    strong{
+        color:#9f4453;
+    }
+    .trackBtn{
+        background:url(../../assets/img/pin.png) no-repeat 10px center #fff;
+        border-radius: 3px;
+        border: 1px solid #666;
+        min-width: 115px;
+        padding: 8px 10px 8px 24px;
+        background-size: 12px;
+        margin: 20px 0;
+    }
+    .orng-btn{
+        margin-right: 24px;
+        background:url(../../assets/img/btnBg.png) #eaac29;
+        color: #000;
+        width: 175px;
+        height: 40px;
+        font-size: 14px;
+        margin: 0;
+        padding: 0 8px;
+        border:none;
+        overflow: hidden;
+        cursor: pointer;
+        border:1px solid #887541;
+        border-radius:4px;
+        i{
+            font-size: 23px;
+            margin-right: 4px;
+        }
+    }
+}
+
+
+p{
+    font-size: 14px;
+    margin: 5px 0;
+    span{
+        background-color: #dddddd;
+        padding: 2px 10px;
+        margin: 0 5px;
+    }
+}
+
+.innerFlex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 840px;
+}
+
+.steps {
+    margin: 100px 50px 40px;
+    width: 100%;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    p{        
+        color: #909090;
+        margin-top: 15px;    
+    }
+}
+.steps ul {
+    list-style: none;
+}
+.steps ul li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;    
+    border-radius: 100%;
+    background: #d8d8d8;
+    margin-right:  14rem;
+    position: relative;
+    span{
+        position: absolute;
+        color: #626262;
+        top: -23px;
+        font-size: 13px;
+        font-weight: 700;
+        left: -14px;
+    }
+    &:last-child{
+        margin-right: 0;
+    }
+    
+}
+.steps ul li:first-child {
+    margin-left: unset;
+}
+.steps ul li:first-child:before {
+    display: none;
+}
+.steps ul li:before {
+    content: "";
+    width: 14rem;
+    background-color: #d8d8d8;
+    height: 4px;
+    position: absolute;
+    top: 6px;
+    right: 15px;
+}
+.steps ul .active {
+    background: #61cf88;   
+    &:first-child:after{
+        display: none;
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 15rem;
+        bottom: -15px;
+        left: -14.7rem;
+        background-color: #ccc;
+
+    } 
+}
+.steps ul .active:before {
+    background-color: #61cf88;
+}
+      
+@media all and (max-width:1640px){
+    .steps{
+        margin: 70px 15px 40px;
+        ul li{
+        margin-right: 7rem;
+            &:before{
+                width: 7rem;
+            }
+        }
+    }
+    .steps ul .active::after {
+        width: 8.5rem;
+        left: -8rem;
+    }
+}
+@media all and (max-width:1480px){
+    td{vertical-align: top;}
+    .myBagWrap tr td .delvyTab{
+        margin: 15px 0 ;
+    }
+    .innerFlex{
+        display: block;
+        .idNo{
+            max-width: 120px;
+        }
+    }
+    .rightAction{
+        min-height: 1px;
+    }
+}
+@media all and (max-width:1099px){
+    .myBagWrap tr td .flex-wrap{
+        display: block;
+    }
+    .steps{
+        margin: 70px 15px 0;
+    }
+    .rightAction{
+        align-items: flex-start;
+    }
+}
+@media all and (max-width:920px){
+    .myBagWrap tr{
+        display: block;
+        td{
+            display: block;
+        }
+    }
+}
+@media all and (max-width:600px){
+    .ordrStatus {
+        padding: 15px;
+        h2{
+            font-size: 18px;
+        }
+        .addressBar{
+            padding: 0;
+            h2{
+                font-size: 18px;
+            }
+        }
+    }
+    .myBagWrap tr td .flex-wrap h2{
+        font-size: 17px;
+        white-space: normal;        
+    }
+    .steps ul li{
+        margin-right: 3rem;
+        &:before{
+            width: 3rem;
+        }
+    }
+    .steps ul .active::after {
+        width: 4.5rem;
+        left: -4rem;
+    }
+}

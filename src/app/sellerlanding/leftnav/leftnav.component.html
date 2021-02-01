@@ -1,0 +1,32 @@
+<div class="leftNav">
+  <h1>
+    <img src="assets/img/logo.png">
+    <i class="fa fa-close"></i>
+  </h1>
+  <ul>
+    <li [routerLink] = "['/sellerlanding']" routerLinkActive="active"><span class="fa  fa-home"></span>  Dashboard</li>
+    <li [routerLink] = "['/sellerlanding/storeprofile']"  routerLinkActive="active">Store Profile  <i class="fa fa-angle-down"></i>
+      <ul>
+        <li [routerLink] = "['/sellerlanding/storedetail']"  routerLinkActive="active">Store Details</li>
+      </ul>
+    </li>
+    <li>Cataloge  <i class="fa fa-angle-down"></i>
+      <ul>
+        <li [routerLink] = "['/sellerlanding/addproduct']"  routerLinkActive="active">Add Product</li>
+        <li [routerLink] = "['/sellerlanding/manageproduct']" routerLinkActive="active">Manage Products</li>
+      </ul>
+    </li>
+    <li  [routerLink] = "['/sellerlanding/manageorder']" routerLinkActive="active">Manage Orders</li>
+    <li [routerLink] = "['/sellerlanding/subscrption']"  routerLinkActive="active">Subscription Details</li>
+    <li [routerLink] = "['/sellerlanding/ratingreview']"  routerLinkActive="active">Ratings and Reviews</li>
+    <li routerLinkActive="active" [routerLink] = "['/sellerlanding/promation']">Promotions and Offers <i class="fa fa-angle-down"></i>
+      <ul>
+        <li [routerLink] = "['/sellerlanding/addnewoffer']"  routerLinkActive="active">Add new Offers</li>
+      </ul>
+    </li>
+    <li [routerLink] = "['/sellerlanding/managereturn']"  routerLinkActive="active">Manage Returns</li>
+    <li [routerLink] = "['/sellerlanding/buyermsg']"  routerLinkActive="active">Buyer Message</li>
+    <li [routerLink] = "['/sellerlanding/reports']"  routerLinkActive="active">Reports</li>
+    <li [routerLink] = "['/sellerlanding/productquestion']"  routerLinkActive="active">Product Questions</li>
+  </ul>
+</div>

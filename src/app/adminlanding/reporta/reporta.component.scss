@@ -1,0 +1,125 @@
+.tableCover{
+    background:#fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    h3{
+        font-size: 15px;
+        padding: 15px;
+        color: #444;
+    }
+    .tableHead{
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom:1px solid #dddddd;
+        &.brt{
+            border-top:1px solid #dddddd;
+        }
+        select{
+            height: 38px;
+            border:1px solid #dddddd;
+            min-width: 220px;
+            margin: 0 15px;
+            padding: 0 10px;
+            font-size: 15px;
+        }
+    }
+    .selectBox{
+        height: 38px;
+        position: relative;
+        width: 220px;
+        margin-right: 10px;
+        select{
+            height: 38px;
+            width: 100%;
+            font-size: 14px;
+            border: 1px solid #dcdcdc;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            cursor: pointer;
+            padding: 5px;
+            margin: 0;
+            background: url('../../../assets/img/dropdown.png') no-repeat 95% center #fff;
+        }
+    }
+    .selectWrapr{
+        display: flex;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        li{
+            padding:0 10px;
+            label{
+                cursor: pointer;
+                position: relative;
+                padding-left: 5px;
+                font-weight: 600;
+                &:after{
+                    content: '';
+                    position: absolute;
+                    height: 18px;
+                    width: 18px;
+                    border:2px solid #1f3a3b;
+                    left: -22px;
+                    top: -2px;
+                    background: #fff;
+                    border-radius: 2px;
+                }
+            }
+            input[type="checkbox"]{
+                opacity: 0;
+                width: 1px;
+            }
+            input[type="checkbox"]:checked ~ label:after{
+                background: url(../../../assets/img/checkTick.png) no-repeat center;
+                background-size: 14px;
+                content: ' ';
+            }
+            &.grnBg label{
+                color: #61cf88;
+                &:after{border-color: #61cf88;}
+            }
+            &.ylwBg label{
+                color: #e5c560;
+                &:after{border-color: #e5c560;}
+            }
+            &.voitBg label{
+                color: #604578;
+                &:after{border-color: #604578;}
+            }
+        }
+    }
+}
+.graphWrap{
+    padding: 10px 15px;
+}
+
+@media only screen and  (max-width:1200px){
+    .tableCover .selectBox{
+        width: 130px;
+        select{
+            min-width: 130px;
+        }
+    }
+}
+@media only screen and  (max-width:900px){
+    .tableCover .tableHead{
+        flex-direction: column;
+        .radiowrap{
+            margin-top: 10px;
+        }
+    }
+}
+@media only screen and  (max-width:480px){
+    .selectWrapr{
+        flex-direction: column;
+        width: 100%;
+        .selectBox{
+            margin: 5px 0;
+            width: 100%;
+        }
+    }
+}

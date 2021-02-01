@@ -1,0 +1,297 @@
+.tableCover{
+  background:#fff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  .detailTable {
+    max-width: 1000px;
+    tr{
+      td{
+        padding: 15px 0;
+        vertical-align: top;
+       
+        img{
+          max-width: 80px;
+          border:1px solid #ccc;
+          border-radius: 4px;
+          margin-right: 10px;
+          padding: 5px;
+          background-color: #fff;
+        }
+        span{
+          margin-right: 15px;
+        }
+        strong.w60{
+          max-width: 500px;
+          display: block;
+        }
+        table.productSpec{
+          border-collapse: collapse;
+          max-width: 1000px;
+          border-top: 1px solid #dedede;
+          td {
+            color: #3d3d3d; 
+            border-bottom: 1px solid #dedede;
+            padding: 8px 15px;
+            width: 70%;
+            font-size: 14px;
+            &:first-child{
+                background: #ededed;
+                width: 30%;
+            }
+          }
+        }
+      }
+    }
+  }
+ .orng-btn{
+   margin: 0;
+   width: 155px;
+    &.sml-btn{
+      width: auto;
+      padding: 0 15px;
+      font-size: 14px;
+      height: 35px;
+   }
+   &.mb10{
+     margin-bottom: 10px;
+   }
+   &.mt10{
+     margin-top: 10px;
+   }
+ }
+ .cancel-btn{
+    border:none;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: transparent;
+    padding: 0 15px;
+ }
+ // edit mode
+  &.editMode{
+    display: block;
+    .w700{
+      max-width: 700px;
+    }
+    .detailTable {
+      width: 1310px;
+      max-width: 1310px;
+      tr td{
+        width: auto;
+        &.vatop{
+          vertical-align: top;
+        }
+        &:first-child{
+          width: 250px;
+        }
+        padding:8px 0;
+        vertical-align: middle;
+        .selectBox{
+            width: 100%;
+            height: 40px;
+            border:1px solid #dfdfdf;
+            background-color: #fff;
+            overflow: hidden;
+            select{
+              width: 110%;
+              height: 40px;
+              font-size: 15px;
+              padding-left: 10px;
+              background:  url(../../../assets/img/dropdown.png)  no-repeat 88% center;
+              border:none;
+            }
+            &.w200{
+              max-width: 200px;
+              select{
+                background-position: 85% center;
+              }
+            }
+          }
+        em{
+          color: red;
+          font-style: normal;
+        }
+        input{
+          height: 40px;
+          width: 100%;
+          border:1px solid #dfdfdf;
+          padding: 0 10px;
+          font-size: 15px;
+          margin-right: 10px;
+          &.w200{
+            width: 200px;
+          }
+        }
+        .mainIFildWrap{
+          display: flex;
+          align-items: center;
+          .inputWrap{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            input{
+              min-width: 190px;
+              margin-right: 10px;
+            }
+          }
+        }
+        textarea{
+          border:1px solid #dfdfdf;
+          min-height: 120px;
+          width: 100%;
+        }
+        .specfCol{
+          display: flex;
+          margin-bottom: 15px;
+          max-width: 700px;
+          p{
+            width: 190px;
+            background-color: #e6e6e6;
+            color: #333;
+            border-radius: 3px;
+            margin-right: 15px;
+            padding: 10px 15px;
+          }
+        }
+      }
+    
+      .productAddCol{
+        background-color: #f4f4f4;
+        padding: 15px;
+        border:1px solid #dddddd;
+        margin: 0;
+        .produtBar{
+          display: flex;
+          align-items: center;
+          margin: 15px 0;
+          .selectBox{
+            width: 80px;
+            margin-right: 5px;
+            select{
+              width: 140%;
+              background-position: 60% center;
+            }
+          }
+          input{
+            width: 143px;
+            margin-right: 5px;
+            padding: 0 6px;
+          }
+          ul{
+            display: flex;
+            flex: 1;
+            list-style: none;
+          }
+          .del, .addItem{            
+            border:none;
+            height: 30px;
+            width: 30px;
+            text-indent: 100px;
+            overflow: hidden;
+            background:url(../../../assets/img/trashBtn.png) no-repeat center center transparent;
+          }
+          .addItem{
+            background-image:url(../../../assets/img/add.png);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and  (max-width:1620px){
+  .tableCover.editMode .detailTable {
+    width: auto;
+    tr td:first-child{
+      min-width: 130px;
+      width: auto;
+    }
+    .productAddCol .produtBar{
+      flex-wrap: wrap;
+      ul{
+        margin: 10px 0 0;
+        min-width: 60%;
+        li img{
+          max-width: 50px;
+        }
+      }
+    }
+  }
+}
+@media only screen and  (max-width:1140px){
+  .tableCover.editMode .detailTable {
+    .productAddCol{
+      padding: 5px;
+    }
+    tr td .mainIFildWrap .inputWrap input{
+      min-width: 80px;
+    }
+  } 
+}
+@media only screen and  (max-width:990px){
+  .tableCover {
+    flex-direction: column-reverse;
+    .detailTable tr td{
+      display: block;
+      padding: 3px 0 8px;
+      width: 100%;
+      &:first-child{
+        font-weight: bold;
+      }
+    }
+  }
+  .tableCover .detailTable tr td table.productSpec td{
+    display: table-cell;
+    padding: 5px;
+  }
+}
+
+@media only screen and  (max-width:930px){
+  .tableCover.editMode .detailTable {
+    .productAddCol .produtBar .selectBox{
+      margin-bottom: 10px;
+    }
+    tr td{
+      display: block;
+      padding: 2px 0 8px;
+    }
+  }
+}
+@media only screen and  (max-width:680px){
+  .tableCover{
+    padding: 10px;
+    &.editMode .detailTable .productAddCol .produtBar{
+      align-items: flex-start;
+      width: 100%;
+      max-width: 100%;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+      input{
+        min-width: 200px;
+        margin-bottom: 10px;
+      }
+      .selectBox{
+        width: 200px;
+        select{
+          width: 110%;
+          background-position: 85% center;
+        }
+      }
+    }
+  }
+}
+@media only screen and  (max-width:480px){
+  .tableCover.editMode .detailTable tr td .mainIFildWrap .inputWrap{
+    input{
+      min-width: 20px;
+    }
+    span{
+      margin-right: 10px;
+    }
+  }
+  .tableCover.editMode .detailTable tr td input{
+    width: 60%;
+  }
+}

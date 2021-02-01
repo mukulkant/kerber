@@ -1,0 +1,81 @@
+<div class="topHead">
+  <div class="wrapper">
+      <div class="ct-select-group">
+          <select class="ct-select">
+              <option value="English">English</option>
+              <option value="Spanish">español</option>
+          </select>
+      </div>
+
+      <div class="flex-wrap">
+          <div class="ct-select-group location">
+              <select class="ct-select">
+                  <option value="Current">Location</option>
+                  <option value="Dehraun" selected>Dehraun</option>
+                  <option value="Terrassa">Terrassa</option>
+              </select>
+          </div>
+
+          <ul class="userLogin">
+              <li>Hello, bhattacharya
+                <!-- <ul>
+                  <li [routerLink] = "['/myaccount']">Account</li>
+                  <li>Wishlist</li>
+                  <li>Orders</li>
+                  <li>Returns</li>
+                  <li [routerLink] = "['/notification']"> Notification <span>11</span></li>
+                  <li>Logout</li>
+                </ul> -->
+              </li>
+          </ul>
+      </div>
+  </div>
+</div>
+
+<div class="header">
+  <div class="wrapper">
+      <div class="flex-wrap">
+          <a [routerLink] = "['']" class="logo"><img src="assets/img/logo.png" alt="kerebe"></a>
+          <button class="navBtn"><i class="fa fa-list-ul"></i></button>
+      </div>
+      
+      <div class="searchBar">
+         <div class="selectBox">
+              <select>
+                  <option>All Categories</option>
+                  <option>Apparel & Accessories</option>
+                  <option>Automotive</option>
+                  <option>Babies & Maternity</option>
+                  <option>Bags & Luggage</option>
+                  <option>Beauty & Health</option>
+                  <option>Computers & Accessories</option>
+                  <option>Consumer Electronics</option>
+                  <option>Jewelry</option>
+                  <option>Marine</option>
+                  <option>Office & School</option>
+                  <option>Pets</option>
+                  <option>Safety & Security</option>
+                  <option>Shoes</option>
+                  <option>Sports & Entertainment</option>
+                  <option>Tools & Hardware</option>
+                  <option>Tools & Hardware</option>
+              </select>
+         </div>
+          <input type="text" class="searchBox" placeholder="Search here...">
+          <button class="searchBtn">
+              <i class="fa fa-search"></i>
+          </button>
+      </div>
+
+      <div class="cartBox" [routerLink] = "['mybag']">
+        <div class="bagBox">
+            <img src="assets/img/bag.png" alt="">
+        </div>
+        <div>
+            <p>TOTAL</p>
+            <strong>$600.00</strong>
+        </div>
+      </div>
+  </div>
+</div>
+

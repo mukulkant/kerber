@@ -1,0 +1,329 @@
+.grayWrap{
+    padding: 24px;
+    background-color: #f4f4f4;
+    border:1px solid #a4a4a4;
+    margin: 45px 0;
+    h2{
+        padding-bottom: 15px;
+        border-bottom: 1px solid #dddddd;
+        margin-bottom: 15px;
+    }
+    .acWrap{
+        display: flex;
+        align-items: flex-start;
+        .navLeft, .relDataRight{            
+            border-radius: 3px;
+            box-shadow: 0 0 3px rgba(0,0,0,0.2);
+            background-color: #fff;
+        }
+        .navLeft{
+            min-width: 290px;
+            margin-right: 25px;
+            padding: 5px 20px;
+            ul{
+                list-style: none;
+                li{
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: #424242;
+                    border-bottom: 1px solid #dedede;
+                    padding: 20px 15px;
+                    cursor: pointer;
+                    &:last-child{
+                        border:none;
+                    }
+                    &:hover, &.active{
+                        color: #87cb9f;
+                    }
+                }
+            }
+        }
+        .relDataRight{
+            flex:1;
+            padding: 40px;
+            p.mb8{
+                margin-bottom: 8px;
+                font-size: 15px;
+            }
+            p.mb12{
+                margin-bottom: 15px;
+                font-size: 15px;
+            }
+            h3{
+                font-size:18px;
+                color: #363636;
+                margin-bottom: 16px;
+                span{
+                    font-size: 15px;
+                    color: #505c5f;
+                    font-weight: 500;
+                    margin-left: 10px;
+                    cursor: pointer;
+                }
+            }
+            .inputWrap{
+                margin: 0 0 50px;
+                display: flex;
+                input[type="text"]{
+                    height: 50px;
+                    min-width: 300px;
+                    background:#fafafa;
+                    border:1px solid #dddddd;
+                    margin-right: 10px;
+                    padding: 0 10px;
+                    font-size: 15px;
+                }
+                &.mb0{
+                    margin-bottom: 0px;
+                }
+                span{
+                    margin-right: 10px;
+                }
+                label{
+                    margin: 0 20px 0 5px;
+                }
+            }
+            .addressBar{
+                display: flex;
+                .addAddress{
+                    height: 290px;
+                    border:1px dashed #9b9b9b;
+                    border-radius: 3px;
+                    min-width: 260px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    i{
+                        font-size: 45px;
+                    }
+                }
+                .addressCol{
+                    min-height: 290px;
+                    border:1px solid #9b9b9b;
+                    margin-left: 25px;
+                    flex:1;
+                    border-radius: 3px;
+                    padding: 25px;
+                    color: #333333;
+                    display: flex;
+                    flex-direction: column;
+                    h4{
+                        margin-bottom: 5px;
+                    }
+                    
+                    p{
+                        margin-bottom: 5px;
+                        display: flex;
+                        align-items: center;
+                        &.actionAd{
+                            display: flex;
+                            align-items: center;
+                            span{
+                                font-size: 16px;
+                                padding: 0 5px 0 0;
+                                margin-right: 5px;
+                                border-right: 1px solid #333333;
+                                cursor: pointer;
+                                line-height: 15px;
+                                
+                                &:last-child{
+                                    border-right: none;
+                                    margin-left: auto;
+                                    margin-right: 0;
+                                    padding: 0;
+                                }
+                                &:hover, &.grnTxt{
+                                    color: #87c987;
+                                }
+                            }
+                        }
+                        &:last-child{
+                            margin-top: auto;
+                        }
+                        img{
+                            max-width: 32px;
+                            margin-right: 6px;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+    .frmBox{
+        width: 410px;
+        .frmcontrol{
+            display: block;
+            height: 50px;
+            width: 100%;
+            border:1px solid #dadada;
+            margin-bottom: 15px;
+            padding: 0 10px;
+            font-size: 15px;
+            border-radius: 2px;
+        }
+        .orng-btn{margin-right: 24px;
+            background:url(../../assets/img/btnBg.png) #eaac29;
+            color: #000;
+            width: 205px;
+            height: 50px;
+            font-size: 18px;
+            padding: 0 8px;
+            border:none;
+            overflow: hidden;
+            cursor: pointer;
+            border:1px solid #887541;
+            border-radius:4px;
+        }
+    }
+    .cardDtls{
+        display: flex;
+        position: relative;
+        .frmcontrol{
+            min-width: 90px;
+            max-width: 90px;
+            &:last-child{
+                margin-left: auto;
+            }
+            &.ml-10{
+                margin-left: 10px;
+            }
+        }
+        
+        input.frmcontrol{
+            text-align: center;
+        }
+        i{
+            color: #689583;
+            font-size: 17px;
+            position: absolute;
+            right: -30px;
+            top: 18px;
+            cursor: pointer;
+        }
+    }
+.btnWrap{
+    margin: 10px 0 0;
+    .orng-btn{
+        width: 100px;
+        height: 40px;
+        font-size: 15px;
+        margin-right: 10px;
+        &.wt-btn{
+            background: #e5e5e5;
+            border-color: transparent;
+        }
+    }
+}    
+
+@media all and (max-width:1630px){
+    .grayWrap .acWrap .relDataRight .addressBar {
+        .addressCol{
+            padding: 10px;
+            margin-left: 15px;
+        }
+        .addAddress{
+            min-width: 180px;
+            i{
+                font-size: 25px;
+            }
+        }
+    }
+    
+}
+
+@media all and (max-width:1425px){
+    .grayWrap .acWrap .relDataRight{
+        padding: 15px;
+        .inputWrap input[type="text"]{
+            min-width: 49%;
+        }
+    }
+    .grayWrap .acWrap .relDataRight .addressBar {
+        flex-wrap: wrap;
+        .addAddress{
+            min-width: 100%;
+            height: 100px;
+        }
+        .addressCol{
+            min-width: calc(50% - 10px);
+            margin: 10px 5px 0;
+        }
+    }
+}
+@media all and (max-width:1024px){
+    .grayWrap .acWrap {
+        .navLeft {
+            min-width: 240px;
+            margin-right: 15px;
+            padding: 5px;
+        }
+        .relDataRight .inputWrap{
+            margin: 0 0 30px;
+            flex-direction: column;
+            input[type="text"]{
+                min-width: 100%;
+                margin: 0 0 10px;
+            }
+            &.inputWrap{
+                display: block;
+            }
+        }
+    }
+}
+
+@media all and (max-width:980px){
+    .grayWrap .acWrap .relDataRight .addressBar .addressCol{
+        min-width: 100%;
+        margin: 10px 0 0;
+        min-height: 150px;
+    }
+    .addFrm h2{
+        font-size: 18px;
+    }
+    .addFrm .frmBox{
+        width: 100%;
+    }
+}
+
+@media all and (max-width:680px){
+    
+    .grayWrap {
+        h2{
+            font-size: 20px;
+        }
+        .acWrap {
+            .navLeft ul li{
+                padding: 10px 8px;
+            }
+            .relDataRight {
+                h3{
+                    font-size: 16px;
+                }
+                .inputWrap input[type="text"]{
+                    height: 40px;
+                }
+            }
+        }
+    }
+    
+}
+@media all and (max-width:620px){
+    .grayWrap {
+        padding: 15px;
+        .acWrap{
+            display: block;
+            .navLeft{
+                margin: 0 0 15px;
+            }
+        }
+        .relDataRight .inputWrap label{
+            margin: 0 7px 0 5px;
+        }
+    }
+    
+}

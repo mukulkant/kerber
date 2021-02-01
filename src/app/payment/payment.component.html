@@ -1,0 +1,87 @@
+<app-headerloggedin></app-headerloggedin>
+
+<div class="wrapper">
+  <div class="cartWrap">
+    <div class="shopingCart">
+      <!-- Payment one -->
+      <div class="cartCover">
+        <h2><em>2</em>  Payment Option</h2>
+        <div class="paymentMode">
+          <div class="cType">
+            <ul>
+              <li class="active">Credit Card</li>
+              <li>Debit Card</li>
+              <li>Paypal</li>
+            </ul>
+          </div>
+          <div class="frmBox">
+            <input type="text" placeholder="Card Number" class="frmcontrol">
+            <input type="text" placeholder="Name on the card" class="frmcontrol">
+            
+            <div class="cardDtls">
+              <i class="fa fa-question-circle-o"></i>
+              <select class="frmcontrol">
+                <option value="=">Month</option>
+              </select>
+              <select class="frmcontrol ml-10">
+                <option value="=">Year</option>
+              </select>
+              <input type="text" placeholder="CVV" class="frmcontrol">
+              
+            </div>
+          
+            <button class="orng-btn" [routerLink]="['ordersuccess']">Continue</button>
+          </div>
+        </div>
+      </div> 
+      <!-- Payment one/ -->
+    </div>
+    
+    <div class="orderSummry">
+      <div class="cartHead">
+        <h2>Order Summary</h2>
+      </div>
+      <table>
+        <tr>
+          <td colspan="2" class="text-left">
+            Price Details
+          </td>
+        </tr>
+        <tr>
+          <td>Price</td>
+          <td><h2>$599</h2></td>
+        </tr>
+        <tr>
+          <td>Discount</td>
+          <td><h2>$100</h2></td>
+        </tr>
+        <tr>
+          <td>Total Payable</td>
+          <td><h2>$499</h2></td>
+        </tr>
+        <tr>
+          <td>Shipping Cost</td>
+          <td><strong>Free</strong></td>
+        </tr>
+
+        <tr class="brdrTB">
+          <td>Total Payable</td>
+          <td><h2>$499</h2></td>
+        </tr>
+
+        <tr>
+          <td colspan="2" class="text-center">
+            You Save : 100 (20%) on this order
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="text-center">
+            <button class="orng-btn" [routerLink]="['orderfail']">Continue</button>
+          </td>
+        </tr>
+      </table>
+      
+    </div>
+  </div>
+  
+</div>

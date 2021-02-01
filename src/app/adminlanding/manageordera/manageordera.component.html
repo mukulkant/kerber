@@ -1,0 +1,156 @@
+<app-headeradmin></app-headeradmin>
+<div class="wrapper-col">
+  <app-leftnava></app-leftnava>
+  <div class="rightDataCol">
+    <button class="menuIco">
+      <i class="fa fa-bars"></i>
+    </button>
+    <h5>Manage Order</h5>
+    <div class="tableCover">
+      <div class="upperHead">
+        <div class="detls">
+          <p>Total Sellers :  <strong>101</strong> </p>
+          <p>Total Orders current Month :  <strong>101</strong> </p>
+        </div>
+      </div>
+      <div class="tableHead">
+        <div>
+          <label for="search">Search User</label>
+          <input type="text" id="search">
+          <button class="orgn-btn">Search</button>
+        </div>
+        <div>
+          <label for="Filter">Show</label>
+          <select id="Filter">
+            <option value="">option1</option>
+            <option value="">option1</option>
+            <option value="">option1</option>
+          </select>
+
+          <label for="Filter">Filter</label>
+          <select id="Filter">
+            <option value="">option1</option>
+            <option value="">option1</option>
+            <option value="">option1</option>
+          </select>
+        </div>
+      </div>
+      <div class="tableWrap">
+        <table>
+          <tr>
+            <th width="5%"><div> S.No.</div></th>
+            <th width="10%"><div> Seller id <span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></div></th>
+            <th width="10%"><div> Buyer id <span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></div></th>
+            <th width="10%"><div> Order Date  <span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></div></th>
+            <th width="10%"><div> Order Total ($)<span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></div></th>
+            <th width="10%"><div> Delivery Type <span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></div></th>
+            <th width="10%"><div> Delivery Date <span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></div></th>
+            <th width="10%"><div> Courier Company <span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></div></th>
+            <th width="10%"><div> Footprint <span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></div></th>
+            <th width="5%"><div> Status <span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></div></th>
+            <th width="10%"><div> Actions</div></th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td><span>dainel8765</span></td>
+            <td><span>Online Store</span></td>
+            <td><span>dainel@hotmail.com</span></td>
+            <td>31-12-2020</td>
+            <!-- <td>$890</td> -->
+            <td>Delivery Type</td>
+            <td>31-12-2020</td>
+            <td>ABC Company</td>
+            <td>100GB</td>
+            <td><span>Active</span></td>
+            <td>
+              <button>
+                <i class="fa fa-trash"></i>
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="pagiCover">
+        <app-pagination></app-pagination>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Manage Return modal start -->
+<div class="modalWrap" style="display: none;">
+  <div class="modalBox returtBox">
+    <h2>#2154872 <button>Shipped</button></h2>
+    <span class="closebtn"></span>
+    <table class="orderDetail">
+      <tr>
+        <td colspan="3">
+          <strong>Customer Name</strong>
+          <p>Jhon Doe</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Shipping details</strong>
+          <p>ZZoe Tmayao</p>
+          <p>ZZoe Tmayao</p>
+          <p>ZZoe Tmayao</p>
+          <p>ZZoe Tmayao Mo.9876543210</p>
+        </td>
+        <td>
+          <strong>Billing details</strong>
+          <p>ZZoe Tmayao</p>
+          <p>ZZoe Tmayao</p>
+          <p>ZZoe Tmayao</p>
+          <p>ZZoe Tmayao Mo.9876543210</p>
+        </td>
+        <td>
+          <strong>Order Date</strong>
+          <p>04-10-2020</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <strong>Payment Via</strong>
+          <p>Credit Card (visa) xxxx-9876-xxxx-87654</p>
+        </td>
+        <td>
+          <strong>Offer applied</strong>
+          <p>1234567</p>
+        </td>
+        <td>
+          <strong>Footprint (FB)</strong>
+          <p>10 GB</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="3">
+          <strong>Seller</strong>
+          <p>Abv technolies pvt.</p>
+        </td>
+      </tr>
+
+
+    </table>
+    <table class="paymentDeatil">
+      <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Total</th>
+      </tr>
+      <tr>
+        <td>Acer Travelmate TMP214-52 14-inch Laptop</td>
+        <td>1 </td>
+        <td>
+          <p>$500.00</p>
+          <p><span>Discount</span> $20.00 </p>
+          <p><span>Shipping Cost</span> $20.00 </p>          
+          <h3><span>Total </span>$ 520.00</h3>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!-- Manage Return modal end -->

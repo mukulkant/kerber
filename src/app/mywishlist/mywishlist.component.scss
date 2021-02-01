@@ -1,0 +1,359 @@
+.ordrStatus{
+    margin: 40px 0;
+    background-color: #f4f4f4;
+    border:1px solid #a5a5a5;
+    padding: 10px 20px;
+    h2{
+        color: #3d3d3d;
+        font-size: 23px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 15px;
+        margin-bottom: 10px;
+        span{
+            font-size: 14px;
+            font-weight: normal;
+        }
+    }
+}
+hr{
+    border:none;
+    border-bottom: 1px solid #ccc;
+    margin: 15px 0;
+}
+
+.myBagWrap{
+    width: 100%;
+    tr td{
+        padding: 20px 0;
+        border-bottom: 1px solid #dcdcdc;
+        &:first-child{
+            width: 200px;
+            min-width: 200px;
+        }
+        .flex-wrap{
+            align-items: flex-start;
+            h2{
+                color: #3d3d3d;
+                font-size: 24px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                max-width: 520px;
+                margin-bottom: 0;
+                border: none;
+                padding-bottom: 0;
+                p{
+                    font-size: 15px;
+                    margin-top: 7px;
+                    a{
+                        color: #60cf86;
+                        font-weight:700;
+                        font-size: 14px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .priceTab{
+            p{
+                margin: 4px 0;
+                font-size: 15px;
+                color: #424242;
+                &.p{
+                    font-weight: bold;
+                    color: #333;
+                    span{
+                        color: #2f4851;
+                        font-weight: 800;
+                        font-size: 1.4rem;
+                        margin-right: 10px;
+                        background: transparent;
+                    }
+                    em{
+                        color: #909090;
+                        text-decoration: line-through;
+                        font-style: normal;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+    tr:last-child td {
+        border: none;
+        padding-bottom: 0;
+    }
+}
+.idNo{
+    background-color: #61cf88;
+    padding: 8px 15px;
+    min-width: 180px;
+    text-align: center;
+    color: #fff;
+    margin: 10px 0 0;
+    border-radius: 3px;
+}
+.rightAction{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-height: 200px;
+    min-width: 190px;    
+}
+.delBtn{
+    background:url(../../assets/img/trash.png) no-repeat;
+    background-size: 100%;
+    height: 24px;
+    width: 20px;
+    border:none;
+    opacity: 0.6;
+    display: block;
+    margin: 10px auto 0;
+}
+.orng-btn{
+    margin-right: 24px;
+    background:url(../../assets/img/btnBg.png) #eaac29;
+    color: #000;
+    width: 175px;
+    height: 40px;
+    font-size: 14px;
+    margin: 10px 0 0;
+    padding: 0 8px;
+    border:none;
+    overflow: hidden;
+    cursor: pointer;
+    border:1px solid #887541;
+    border-radius:4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.wht-btn{
+        background:#fff;
+    }
+    i{
+        font-size: 23px;
+        margin-right: 4px;
+    }
+}
+
+table p{
+    font-size: 14px;
+    margin: 5px 0;
+    i{
+        color: #ffb800;
+        font-size: 18px;
+    }
+}
+
+.innerFlex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 840px;
+}
+.buttonCol{
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 0;
+    &.item-end{
+        justify-content: flex-end;
+        .idNo{
+            margin-top: 0;
+        }
+    }
+}
+
+.headBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    h2{
+        padding: 0;
+        margin: 0;
+        border:none;
+    }
+    .sortWrap{
+        display: flex;
+        align-items: center;
+        .selectList{
+            min-width: 200px;
+            position: relative;
+            margin-left: 10px;
+            p{
+                padding: 10px;
+                box-shadow: 0 0 4px rgba(0,0,0,0.2);
+                margin: 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                i{
+                    font-size: 12px;
+                    float: right;
+                }
+            }
+            ul{
+                list-style: none;
+                position: absolute;
+                top: 44px;
+                border: 1px solid #e5e5e5;
+                background: #fff;
+                padding: 5px;
+                width: 100%;
+                li{
+                    padding: 5px;
+                    font-size: 14px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #e5e5e5;
+                    }                            
+                }
+            }
+        }
+    }
+    .searchBar{
+        border:1px solid #ccc;
+        height: 43px;
+        background: #fff;
+        display: flex;
+        justify-content: flex-start;
+        overflow: hidden;
+        min-width: 500px;
+        .selectBox{
+            width: 140px;
+            height: 44px;
+            border:none;
+            overflow: hidden;
+           
+            select{
+                width: 160px;
+                height: 43px;
+                font-size: 15px;
+                padding-left: 10px;
+                background:  url(../../assets/img/dropdown.png) #f6f6f6 no-repeat 115px center;
+                border:none;
+                
+            }
+        }
+        .searchBox{
+            flex: 1;
+            border: none;
+            padding: 0 15px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+        }
+        .searchBtn{
+            width: 55px;
+            background: #60d084;
+            color: #fff;
+            font-size: 22px;
+            border: none;
+        }
+    }
+}
+
+@media all and (max-width:1480px){
+    td{vertical-align: top;}
+  
+    .innerFlex{
+        display: block;
+        .idNo, .idNo{
+            max-width: 120px;
+        }
+    }
+    .rightAction{
+        min-height: 1px;
+    }
+    
+    
+}
+@media all and (max-width:1099px){
+    .myBagWrap tr td .flex-wrap{
+        display: block;
+    }
+   
+    .rightAction{
+        align-items: flex-start;
+        strong{
+            margin-top: 15px;
+        }
+    }
+    .headBox {
+        .searchBar{
+            min-width: 415px;
+        }
+        .sortWrap .selectList {
+            min-width: 140px;
+        }
+    }
+}
+@media all and (max-width:920px){
+    .myBagWrap tr{
+        display: block;
+        td{
+            display: block;
+        }
+    }
+    .headBox{
+        flex-wrap: wrap;
+        h2{
+            min-width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+}
+@media all and (max-width:670px){
+    .searchBar{
+        min-width: 100%;
+        margin-bottom: 10px;
+    }
+}
+@media all and (max-width:600px){
+
+    .ordrStatus {
+        padding: 15px;
+        h2{
+            font-size: 18px;
+        }
+        table td{
+            padding: 8px 0;            
+        }
+    }
+    .myBagWrap tr td .flex-wrap h2{
+        font-size: 17px;   
+    }
+    
+    .buttonCol{
+        display: block;
+    }
+    .myBagWrap tr td .flex-wrap h2{
+        white-space: normal;
+    }
+}
+@media all and (max-width:480px){
+    .headBox .searchBar{
+        min-width: unset;
+        flex-wrap: wrap;
+        height: auto;
+        .selectBox {
+            width: 100%;
+            select{
+                width: 110%;
+                background-position:  85% center;
+            }  
+        }
+        .searchBox{
+            height: 45px;
+        }
+        .searchBtn{
+            width: 50px;
+        }
+    }
+    
+
+}

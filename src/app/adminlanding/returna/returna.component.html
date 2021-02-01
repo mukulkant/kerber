@@ -1,0 +1,258 @@
+<app-headeradmin></app-headeradmin>
+
+<div class="wrapper-col">
+  <app-leftnava></app-leftnava>
+  <div class="rightDataCol">
+    <button class="menuIco">
+      <i class="fa fa-bars"></i>
+    </button>
+    <h5>Manage Returns</h5>
+    <div class="tableCover">
+      <div class="upperHead">
+        <div class="detls">
+          <p>Total Returns in year :  <strong>101</strong> </p>
+          <p>Current Month :  <strong>101</strong> </p>
+        </div>
+      </div>
+      <div class="tableHead">
+        <div>
+          <label for="search">Search User</label>
+          <input type="text" id="search">
+          <button class="orgn-btn">Search</button>
+        </div>
+        <div>
+          <label for="Filter">Show</label>
+          <select id="Filter">
+            <option value="">option1</option>
+            <option value="">option1</option>
+            <option value="">option1</option>
+          </select>
+
+          <label for="Filter">Filter</label>
+          <select id="Filter">
+            <option value="">option1</option>
+            <option value="">option1</option>
+            <option value="">option1</option>
+          </select>
+        </div>
+      </div>
+      <div class="tableWrap">
+        <table>
+          <tr>
+            <th width="5%"><div> S.No.</div></th>
+            <th width="10%"><div> Order id <span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></div></th>
+            <th width="10%"><div> Return id <span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></div></th>
+            <th width="10%"><div> Seller id <span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></div></th>
+            <th width="10%"><div> Buyer id <span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></div></th>
+            <th width="10%"><div> Return Reason<span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></div></th>
+            <th width="10%"><div> Issued (date) <span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></div></th>
+            <th width="10%"><div> Completed (date)<span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></div></th>
+            <th width="10%"><div> Footprint (GB)<span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></div></th>
+            <th width="10%"><div> Status <span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></div></th>
+            <th width="5%"><div> Actions</div></th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td><span>dainel8765</span></td>
+            <td><span>dainel@hotmail.com</span></td>
+            <td><span>Online Store</span></td>
+            <td><span>dainel@hotmail.com</span></td>
+            <td>Product is not good</td>
+            <td>31-12-2020</td>            
+            <td>31-12-2020</td>
+            <td>100GB</td>
+            <td><span>Returns</span></td>
+            <td>
+              <button>
+                <i class="fa fa-trash"></i>
+              </button>
+            </td>
+          </tr>        
+        </table>
+      </div>
+      <div class="pagiCover">
+        <app-pagination></app-pagination>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- modal start -->
+<div class="modalWrap"  style="display:none">
+  <div class="modalBox returtBox">
+    <h2>#876567
+      <button>Shipped</button>
+    </h2>
+    <span class="closebtn"></span>
+    <table class="orderDetail">
+      <tr>
+        <td colspan="3">
+          <strong>Customer Name</strong>
+          <p>User Name</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Billing Details</strong>
+          <p>ZZoe Tmayao</p>
+          <p>Patter fletster</p>
+          <p>164535 street</p>
+          <p>Old Momreo, Mob. 879567</p>
+        </td>
+        <td>
+          <strong>Shopping Details</strong>
+          <p>04-10-2020</p>
+        </td>
+        <td>
+          <strong>Order Date</strong>
+          <p>04-10-2020</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Seller</strong>
+          <p>Abv tech pvt.</p>
+        </td>
+        <td>
+          <strong>Offer Applied</strong>
+          <p>98765432</p>
+        </td>
+        <td>
+          <strong>Returning Reason</strong>
+          <p>Color Diffrent</p>
+        </td>
+      </tr>
+    </table>
+    <table class="paymentDeatil">
+      <tr>
+        <th>Product</th>
+        <th>Rtn Shipped</th>
+        <th>Total</th>
+      </tr>
+      <tr>
+        <td>Acer Travelmate TMP214-52 14-inch Laptop</td>
+        <td>1 </td>
+        <td>
+          <p>$500.00</p>
+          <p><span>Returning Cost</span> $20.00 </p>
+          <h3><span>Total </span>$ 520.00</h3>
+        </td>
+      </tr>
+    </table>
+    <h4>Images</h4>
+    <div class="imgColModal">
+      <img src="../../../assets/img/product/001.jpg">
+      <img src="../../../assets/img/product/001.jpg">
+      <img src="../../../assets/img/product/001.jpg">
+    </div>
+  </div>
+</div>
+<!-- modal end -->
+
+
+<!-- modal start -->
+<div class="modalWrap" style="display:none">
+  <div class="modalBox returtBox">
+    <h2>Buyer Deatils
+      <div>
+        <button>Active</button>
+        <button>Deactive</button>
+        <button>Delete</button>
+      </div>
+    </h2>
+    <span class="closebtn"></span>
+    <table class="orderDetail">
+      <tr>
+        <td>
+          <strong>Buyer Name</strong>
+          <p>User</p>
+        </td>
+        <td>
+          <strong>Email id</strong>
+          <p>User</p>
+        </td>
+        <td>
+          <strong>Phone No.</strong>
+          <p>765432111</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Address</strong>
+          <p>ZZoe Tmayao</p>
+          <p>Patter fletster</p>
+          <p>164535 street</p>
+          <p>Old Momreo, Mob. 879567</p>
+        </td>
+        <td>
+          <strong>Purchases Count</strong>
+          <p>10</p>
+        </td>
+        <td>
+          <strong>Returns/Purchases Ratio</strong>
+          <p>10%</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Review Count</strong>
+          <p>2</p>
+        </td>
+        <td>
+          <strong>Returns Count</strong>
+          <p>2</p>
+        </td>
+        <td>
+          <strong>Avarage Review</strong>
+          <p>Color Diffrent</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Review/ Purchases Ratio (%)</strong>
+          <p>2</p>
+        </td>
+        <td colspan="2">
+          <strong>Report Count</strong>
+          <p>2</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Status</strong>
+          <p>Active</p>
+        </td>
+        <td>
+          <strong>Time Since Last Login</strong>
+          <p>2021-12-12 1:38:20</p>
+        </td>
+        <td>
+          <strong>Time Since Last Purchases</strong>
+          <p>2021-12-12 1:38:20</p>
+        </td>
+      </tr>
+    </table>
+    <h2>Conatact Users</h2>
+    <table class="reasonCol">
+      <tr>
+        <td width="20%">Reason</td>
+        <td width="80%">
+          <select>
+            <option value="">Poor Quality</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Comment</td>
+        <td>
+          <textarea rows="3"></textarea>
+        </td>
+      </tr>
+     
+    </table>
+    <button class="orng-btn">Send Message</button>
+  </div>
+</div>
+<!-- modal end -->

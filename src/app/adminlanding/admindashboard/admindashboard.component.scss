@@ -1,0 +1,138 @@
+.dashboard{
+    align-items: flex-start;
+    h3{
+        color: #2f474e;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+    .grayBox{
+        background-color: #ebebeb;
+        border-radius: 5px;
+        border:1px solid #c7c7c7;
+    }
+    .dGraph{
+        flex:1;
+        display: flex;
+        flex-wrap: wrap;
+        .grayBox{
+            flex:1;
+            min-height: 200px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 15px ;
+            min-width: 46%;
+            h2{
+                color: #16464a;
+                font-size: 30px;
+                font-weight: 800;
+            }
+            span{
+                color: #16464a;
+                
+                &.up{
+                    color: #00a63b;
+                }
+                &.down{
+                    color: #f20000;
+                }
+                &.up, &.down{
+                    display: flex;
+                    align-items: center;
+                    i{
+                        font-size: 28px;
+                        margin-right: 4px;
+                    }
+                }
+            }
+            h3{
+                margin-top: auto;
+            }
+            .report{
+                margin-top: auto;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+            &.totalOrder {
+                margin-right: 15px;
+            }
+            &.totalSale  {
+                margin-left: 15px;
+            }
+        }
+        .totalSelling{
+            min-width: 100%;
+            margin-top: 30px;
+            h3{
+                min-width: 100%;
+                margin-bottom: 20px;
+            }
+            img{
+                margin:50px 0;
+            }
+        }
+    }
+    .dTable{
+        flex:1;
+        margin-left: 30px;
+        h3{
+            padding: 12px;
+            text-align: center;
+        }
+        .table{
+            margin: 0 0 30px;
+            table{
+                width: 100%;
+                border-collapse: collapse;
+                th{
+                    background-color: #2f4857;
+                    padding: 5px;
+                    color: #fff;
+                    font-style: 15px;
+                    font-weight: 500;
+                }
+                td{
+                    padding: 5px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and  (max-width:1110px){
+    .dashboard .dGraph .grayBox{
+        min-width: 100%;
+        margin: 0 0 10px;
+        &.totalOrder, &.totalSale{
+            margin-left: 0;
+        }
+    }
+    .dashboard .dTable .table{
+        margin-bottom: 10px;
+    }
+}
+@media only screen and  (max-width:990px){
+    .dashboard .dTable{
+        margin-left: 10px;width: 100%;
+    }
+
+}
+@media only screen and  (max-width:768px){
+    .flex-col{
+        flex-direction: column;
+    }   
+    .dashboard .dTable{
+        margin-left: 0;
+    }
+}
+@media only screen and  (max-width:480px){
+    .dashboard .dTable .table table{
+        th, td{
+            font-size: 13px;
+        }
+    }
+}

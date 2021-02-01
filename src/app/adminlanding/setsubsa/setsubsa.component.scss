@@ -1,0 +1,39 @@
+.tableCover{
+    background:#fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    table{
+        tr td{
+            font-size: 15px;
+            padding:8px 0;
+            select, input[type="text"]{
+                height: 40px;
+                width: 300px;
+                border:1px solid #dfdfdf;
+                padding: 0 10px;
+                font-size: 15px;
+                &.w130{
+                    width: 130px;
+                }
+            }
+            input.usd{background:url(../../../assets/img/usd.png) no-repeat 95% center;padding-right: 35px;}            
+        }
+    }
+}
+
+@media only screen and  (max-width:645px){
+    table tr td span{
+        display: block;
+        padding: 8px 0 0;
+    }
+}
+
+@media only screen and  (max-width:360px){
+    .tableCover{
+        padding: 10px;
+        table tr td select, 
+        table tr td input[type="text"]{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,120 @@
+.tableCover{
+    background:#fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    table{
+        width: 830px;
+        tr td{
+            padding: 10px 0;
+            vertical-align: super;
+            &:first-child{
+                width: 250px;
+                
+            }
+            p{
+                margin-bottom: 10px;
+                span{
+                    font-size: 18px;
+                    color: #5ed184;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+            }
+            .orgn-btn.sml-btn{
+                margin: 0;
+                display: inline-block;
+                height: 33px;
+            }
+            input{
+                padding: 6px;
+                border: 1px solid #ccc;
+                margin-right: 10px;
+                font-size: 17px;
+                font-weight: 600;
+                max-width: 150px;
+            }
+            h4,h5{font-size: 18px;margin: 25px 0 10px;font-weight: 600;color: #405654;}
+            h5{color: #5ed184;margin: 0;}
+            ul{
+                background-color: #f4f4f4;
+                border:1px solid #dddddd;
+                padding: 15px 25px;
+                list-style: none;
+                max-width: 450px;
+                li{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px 0;
+                    align-items: center;
+                    p{
+                        font-size: 17px;
+                        margin: 0;
+                    }
+                    strong{
+                        color: #74cc92;
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                    &:last-child{
+                        margin-top: 20px;
+                    }
+                }
+            }
+            .trnspt-btn{
+                padding: 10px;
+                border:none;
+                background-color: transparent;
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+    }
+    
+
+
+
+    .selectBox{
+        width: 160px;
+        height: 40px;
+        border:1px solid #ccc;
+        overflow: hidden;  
+        margin-bottom: 15px;
+        select{
+            width: 180px;
+            height: 38px;
+            font-size: 15px;
+            padding-left: 10px;
+            background:  url(../../../assets/img/dropdown.png)  no-repeat 135px center;
+            border:none;
+            
+        }
+    }
+
+}
+
+@media only screen and  (max-width:1140px){
+    
+    .tableCover table{
+        width: 100%;
+        tr td{
+            display: block;
+            width: 100%;
+            padding: 10px 0 0;
+            &:first-child{
+                font-weight: 600;
+    
+            }
+        }
+    }
+}
+@media only screen and  (max-width:768px){
+    .tableCover table tr td h5{
+        padding-left: 0;
+    }
+    .tableCover{
+        padding: 5px;
+        table tr td ul{
+            padding: 5px;
+        }
+    }
+}

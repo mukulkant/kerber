@@ -1,0 +1,85 @@
+<app-headerseller></app-headerseller>
+<div class="wrapper-col">
+  <app-leftnav></app-leftnav>
+  <div class="rightDataCol">
+    <button class="menuIco">
+      <i class="fa fa-bars"></i>
+    </button>
+    <h5>Manage Return</h5>
+    <div class="tableCover">
+      <div class="tableHead">
+        <div>
+          <label for="search">Search Products</label>
+          <input type="text" id="search">
+          <button class="orgn-btn">Search</button>
+        </div>
+        <div>
+          <label for="Filter">Filter</label>
+          <select id="Filter">
+            <option value="">option1</option>
+            <option value="">option1</option>
+            <option value="">option1</option>
+          </select>
+        </div>
+      </div>
+      <div class="tableWrap">
+        <table>
+          <tr>
+            <th width="5%">Order#</th>
+            <th width="7%">Return Date</th>
+            <th width="22%">Product Name <span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></th>
+            <th width="7%">Quantity <span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></th>
+            <th width="9%">Selling Price <span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></th>
+            <th width="9%">Return Cost <span> <i class="fa fa-sort-asc"></i> <i class="fa fa-sort-desc"></i> </span></th>
+            <th width="10%">Buyer</th>
+            <th width="14%">Reason</th>
+            <th width="7%">Status</th>
+            <th width="10%">Actions</th>
+          </tr>
+          <tr>
+            <td>765457</td>
+            <td>31-12-2020</td>
+            <td>
+              <div class="prodDetil">
+                <img src="https://i.imgur.com/PFUOuGB.png" alt="Product Image">
+                <p>Country Delight - Online Milk Delivery App</p>
+              </div>
+            </td>
+            <td>1</td>
+            <td>$400.00</td>
+            <td>$25</td>
+            <td>Buyer Name</td>
+            <td>Product Damaged</td>
+            <td><span>Completed</span></td>
+            <td>
+              <button class="orgn-btn">View Details</button>
+            </td>
+          </tr>
+          <tr>
+            <td>765457</td>
+            <td>31-12-2020</td>
+            <td>
+              <div class="prodDetil">
+                <img src="https://i.imgur.com/PFUOuGB.png" alt="Product Image">
+                <p>Country Delight - Online Milk Delivery App</p>
+              </div>
+            </td>
+            <td>1</td>
+            <td>$400.00</td>
+            <td>$25</td>
+            <td>Buyer Name</td>
+            <td>Product Damaged</td>
+            <td><span>shipped</span></td>
+            <td>
+              <button class="orgn-btn">View Details</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="pagiCover">
+        <app-pagination></app-pagination>
+      </div>
+    </div>
+  </div>
+</div>
+
